@@ -4,9 +4,11 @@ from nicegui import ui
     STEPS TO UPDATE
         make update
         TERMINAL COMMANDS IN ORDER
-                git add .
-                git commit -m "changed"
-                git push
+        
+git add .
+git commit -m "changed"
+git push
+
 '''
 
 
