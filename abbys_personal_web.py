@@ -4,9 +4,8 @@ from nicegui import ui
     STEPS TO UPDATE
         make update
         TERMINAL COMMANDS IN ORDER
-                git status
                 git add .
-                git commit -m "change goes here"
+                git commit -m "changed"
                 git push
 '''
 
@@ -213,5 +212,6 @@ def home():
 ui.run(
     title="Abigayle S Personal Website",
     host="0.0.0.0",
-    port=8080
+    port=8080,
+    favicon="✿"
 )
