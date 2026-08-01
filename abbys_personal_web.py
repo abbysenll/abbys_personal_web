@@ -194,4 +194,8 @@ def home():
         ui.label("Contact").style(TITLE_STYLE)
 
 
-ui.run(title="Abigayle S Personal Website")
+ui.run(
+    title="Abigayle S Personal Website",
+    host="0.0.0.0",
+    port=8080
+)
