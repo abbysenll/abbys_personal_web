@@ -30,6 +30,20 @@ git push
         # 'IM Fell Double Pica', serif; (headers/titles)
         # 'Cormorant', serif; (body texts)
 
+ui.add_head_html("""
+<link rel="icon" type="image/svg+xml" href="
+data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<rect width='100' height='100' rx='20' fill='%23E5C5C1'/>
+<text x='50' y='68'
+text-anchor='middle'
+font-size='55'
+font-family='serif'
+fill='%237F6269'>AS</text>
+</svg>
+">
+""", shared=True)
+
 # GOOGLE FONT LOADER
 ui.add_head_html("""
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&display=swap" rel="stylesheet">
@@ -209,6 +223,5 @@ def home():
 ui.run(
     title="Abigayle S Personal Website",
     host="0.0.0.0",
-    port=8080,
-    favicon="AS"
+    port=8080
 )
