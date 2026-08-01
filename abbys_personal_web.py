@@ -43,6 +43,36 @@ ui.add_head_html("""
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v13/font/simple-icons.min.css">
 """, shared=True)
 
+# GLOBAL STYLE RESET
+ui.add_head_html("""
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background-color: #F4E1E0;
+}
+
+.nicegui-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+</style>
+""", shared=True)
+
 # STYLE DEFINER
 NAV_STYLE = """
 color: #7F6269;
