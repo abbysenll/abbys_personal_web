@@ -1,5 +1,17 @@
 from nicegui import ui
 
+'''
+    STEPS TO UPDATE
+        make update
+        TERMINAL COMMANDS IN ORDER
+                git status
+                git add .
+                git commit -m "change goes here"
+                git push
+'''
+
+
+
 # WEBSITE INSPIRATION :
         # https://braydenfriesen.com
         # https://chester.how
@@ -120,7 +132,7 @@ def home():
             inset 0 1px 0 rgba(255, 255, 255, 0.2),
             inset 0 -1px 0 rgba(127, 98, 105, 0.03);
         """):
-            ui.label("Hello! My name is").style("""
+            ui.label("Hello, my name is").style("""
             color: #7F6269;
             font-family: "IM Fell Double Pica", serif;
             font-size: 40px;
