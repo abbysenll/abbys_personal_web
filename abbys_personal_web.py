@@ -68,7 +68,7 @@ def navbar():
         padding: 18px 24px;
 
         background: #E5C5C1;
-
+        border: 2px solid rgba(127, 98, 105, 0.48);
         border-radius: 7px;
 
         backdrop-filter: blur(4px);
