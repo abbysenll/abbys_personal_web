@@ -148,7 +148,7 @@ def home():
         color: #7F6269;
         font-family: "IM Fell Double Pica", serif;
         font-size: 50px;
-        width: 700px;
+        width: min(700px, 90vw);
         max-width: 100%;
         text-align: center;
         font-weight: 400;
