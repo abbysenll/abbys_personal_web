@@ -180,7 +180,7 @@ def home():
             ui.label("Abigayle Snelson").style("""
         color: #7F6269;
         font-family: "IM Fell Double Pica", serif;
-        font-size: 50px;
+        font-size: clamp(32px, 5vw, 50px);
         width: 100%;
         max-width: 100%;
         text-align: center;
