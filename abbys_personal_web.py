@@ -78,7 +78,7 @@ NAV_STYLE = """
 color: #7F6269;
 text-decoration: none;
 font-family: 'IM Fell French Canon', serif;
-font-size: 20px;
+font-size: 23px;
 font-weight: bold;
 """
 
@@ -239,19 +239,37 @@ def home():
 
     with ui.column().props('id=contact').classes("gap-8"):
         ui.label("Contact").style(TITLE_STYLE)
-        with ui.row().classes("w-full justify-between items-center"):
-            ui.label("Interested? Contact me here:").style(NAV_STYLE)
+        with ui.column().style("""
+            width: 100%;
+            background: #E5C5C1;
 
-            ui.space()
+            border: 2px solid rgba(127, 98, 105, 0.48);
+            border-radius: 10px;
 
-            with ui.column().classes("gap-2"):
-                with ui.row().classes("items-center gap-2"):
-                    ui.html('<i class="si si-github"></i>')
-                    ui.link("GitHub", "https://google.com").style(NAV_STYLE)
+            padding: 40px 60px;
+            margin-top: 40px;
 
-                with ui.row().classes("items-center gap-2"):
-                    ui.html('<i class="si si-linkedin"></i>')
-                    ui.link("LinkedIn", "https://google.com").style(NAV_STYLE)
+            box-shadow:
+                0 -10px 30px rgba(127, 98, 105, 0.18),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        """):
+            with ui.row().classes("w-full gap-32 items-center"):
+                with ui.column().classes("gap-0"):
+                    ui.label("Interested?").style(NAV_STYLE)
+                    ui.label("Contact me here:").style(NAV_STYLE)
+
+                with ui.column().classes("gap-2"):
+                    with ui.row().classes("items-center gap-2"):
+                        ui.html('<i class="si si-github"></i>')
+                        ui.link("GitHub", "https://google.com").style(NAV_STYLE)
+
+                    with ui.row().classes("items-center gap-2"):
+                        ui.html('<i class="si si-gmail"></i>')
+                        ui.link("Gmail", "https://google.com").style(NAV_STYLE)
+
+                    with ui.row().classes("items-center gap-2"):
+                        ui.html('<i class="si si-linkedin"></i>')
+                        ui.link("LinkedIn", "https://google.com").style(NAV_STYLE)
 
 
 ui.run(
