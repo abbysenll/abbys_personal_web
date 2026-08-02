@@ -78,14 +78,14 @@ NAV_STYLE = """
 color: #7F6269;
 text-decoration: none;
 font-family: 'IM Fell French Canon', serif;
-font-size: 20px;
+font-size: 15px;
 font-weight: bold;
 """
 
 TITLE_STYLE = """
         color: #7F6269;
         font-family: "IM Fell Double Pica", serif;
-        font-size: 50px;
+        font-size: 40px;
         width: 100%;
         text-align: center;
         font-weight: 400;
@@ -237,8 +237,21 @@ def home():
                                    font-weight: 700;
                                """)
 
-    with ui.column().props('id=contact'):
+    with ui.column().props('id=contact').classes("gap-8"):
         ui.label("Contact").style(TITLE_STYLE)
+        with ui.row().classes("w-full justify-between items-center"):
+            ui.label("Interested? Contact me here:").style(NAV_STYLE)
+
+            ui.space()
+
+            with ui.column().classes("gap-2"):
+                with ui.row().classes("items-center gap-2"):
+                    ui.html('<i class="si si-github"></i>')
+                    ui.link("GitHub", "https://google.com").style(NAV_STYLE)
+
+                with ui.row().classes("items-center gap-2"):
+                    ui.html('<i class="si si-linkedin"></i>')
+                    ui.link("LinkedIn", "https://google.com").style(NAV_STYLE)
 
 
 ui.run(
