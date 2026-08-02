@@ -78,7 +78,7 @@ NAV_STYLE = """
 color: #7F6269;
 text-decoration: none;
 font-family: 'IM Fell French Canon', serif;
-font-size: 15px;
+font-size: 20px;
 font-weight: bold;
 """
 
@@ -170,7 +170,7 @@ def home():
             ui.label("Hello, my name is").style("""
             color: #7F6269;
             font-family: "IM Fell Double Pica", serif;
-            font-size: 40px;
+            font-size: 30px;
             width: 100%;
             max-width: 100%;
             text-align: center;
@@ -180,7 +180,7 @@ def home():
             ui.label("Abigayle Snelson").style("""
         color: #7F6269;
         font-family: "IM Fell Double Pica", serif;
-        font-size: clamp(32px, 5vw, 50px);
+        font-size: clamp(32px, 5vw, 40px);
         width: 100%;
         max-width: 100%;
         text-align: center;
