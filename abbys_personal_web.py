@@ -78,7 +78,7 @@ NAV_STYLE = """
 color: #7F6269;
 text-decoration: none;
 font-family: 'IM Fell French Canon', serif;
-font-size: 23px;
+font-size: 20px;
 font-weight: bold;
 """
 
