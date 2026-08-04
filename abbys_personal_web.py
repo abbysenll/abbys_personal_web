@@ -25,6 +25,13 @@ git push
         # light peach : #E5C5C1
         # very light peach : #F4E1E0
 
+    # *** BRAINSTORMING COLOUR SCHEME : ***
+        # navy -> cafe noir : 4C3D19
+        # mauve -> kombu green : 354024
+        # peach -> moss green : 889063
+        # light peach -> tan : CFBB99
+        # very light peach -> bone/cream white : E5D7C4
+
     # FONTS :
         # 'IM Fell French Canon', serif; (secondary text)
         # 'IM Fell Double Pica', serif; (headers/titles)
@@ -75,7 +82,7 @@ body {
 
 # STYLE DEFINER
 NAV_STYLE = """
-color: #7F6269;
+color: #CFBB99;
 text-decoration: none;
 font-family: 'IM Fell French Canon', serif;
 font-size: 20px;
@@ -83,7 +90,7 @@ font-weight: bold;
 """
 
 TITLE_STYLE = """
-        color: #7F6269;
+        color: #4C3D19;
         font-family: "IM Fell Double Pica", serif;
         font-size: 40px;
         width: 100%;
@@ -97,8 +104,8 @@ def navbar():
         margin: 12px 20px;
         padding: 18px 24px;
 
-        background: #E5C5C1;
-        border: 2px solid rgba(127, 98, 105, 0.48);
+        background: #354024;
+        border: 2px solid #CFBB99;
         border-radius: 7px;
 
         backdrop-filter: blur(4px);
@@ -133,7 +140,7 @@ def home():
         }
         
         body {
-            background-color: #F4E1E0;
+            background-color: #889063;
         }
         .nicegui-content {
             display: flex;
@@ -157,14 +164,14 @@ def home():
         text-align: center;
         font-weight: 400;
         margin-top: 60px;
-        background: #E5C5C1;
+        background: #CFBB99;
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         margin: 12px 20px;
         padding: 18px 24px;
         border-radius: 10px;
         items-align: center;
-        border: 2px solid rgba(127, 98, 105, 0.48);
+        border: 2px solid #4C3D19;
         box-shadow:
             0 10px 30px rgba(127, 98, 105, 0.18),
             0 0 20px rgba(229, 197, 193, 0.15),
@@ -173,7 +180,7 @@ def home():
         """):
             # INNER TEXT
             ui.label("Hello, my name is").style("""
-            color: #7F6269;
+            color: #4C3D19;
             font-family: "IM Fell Double Pica", serif;
             font-size: 30px;
             width: 100%;
@@ -183,7 +190,7 @@ def home():
             margin-top: 20px;
             """)
             ui.label("Abigayle Snelson").style("""
-        color: #7F6269;
+        color: #4C3D19;
         font-family: "IM Fell Double Pica", serif;
         font-size: clamp(32px, 5vw, 40px);
         width: 100%;
@@ -191,7 +198,7 @@ def home():
         text-align: center;
         font-weight: 600;
         margin-top: 10px;
-        background: rgba(244, 225, 224, 0.38);
+        background: rgba(229, 215, 196, 0.38);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         padding: 18px 24px;
@@ -222,14 +229,14 @@ def home():
         text-align: center;
         font-weight: 400;
         margin-top: 60px;
-        background: #E5C5C1;
+        background: #4C3D19;
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         margin: 12px 20px;
         padding: 18px 24px;
         border-radius: 10px;
         items-align: center;
-        border: 2px solid rgba(127, 98, 105, 0.48);
+        border: 2px solid rgba(53, 64, 36, 0.48);
         box-shadow:
             0 10px 30px rgba(127, 98, 105, 0.18),
             0 0 20px rgba(229, 197, 193, 0.15),
@@ -264,7 +271,7 @@ def home():
         text-align: center;
         font-weight: 600;
         margin-top: 10px;
-        background: rgba(244, 225, 224, 0.38);
+        background: rgba(53, 64, 36);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         padding: 18px 24px;
@@ -275,7 +282,7 @@ def home():
             inset 0 1px 0 rgba(255, 255, 255, 0.2),
             inset 0 -1px 0 rgba(127, 98, 105, 0.03);
         """):
-                ui.label("Title").style(TITLE_STYLE)
+                ui.label("Title").style(f"""{TITLE_STYLE}; color: #CFBB99;""")
                 ui.label("Description").style(f"""{NAV_STYLE}; text-align: center; width: 100%;""")
 
     # PROJECT 2
@@ -290,14 +297,14 @@ def home():
         text-align: center;
         font-weight: 400;
         margin-top: 60px;
-        background: #E5C5C1;
+        background: #4C3D19;
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         margin: 12px 20px;
         padding: 18px 24px;
         border-radius: 10px;
         items-align: center;
-        border: 2px solid rgba(127, 98, 105, 0.48);
+        border: 2px solid rgba(53, 64, 36, 0.48);
         box-shadow:
             0 10px 30px rgba(127, 98, 105, 0.18),
             0 0 20px rgba(229, 197, 193, 0.15),
@@ -332,7 +339,7 @@ def home():
         text-align: center;
         font-weight: 600;
         margin-top: 10px;
-        background: rgba(244, 225, 224, 0.38);
+        background: rgba(53, 64, 36);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         padding: 18px 24px;
@@ -343,7 +350,7 @@ def home():
             inset 0 1px 0 rgba(255, 255, 255, 0.2),
             inset 0 -1px 0 rgba(127, 98, 105, 0.03);
         """):
-                ui.label("Title").style(TITLE_STYLE)
+                ui.label("Title").style(f"""{TITLE_STYLE}; color: #CFBB99;""")
                 ui.label("Description").style(f"""{NAV_STYLE}; text-align: center; width: 100%;""")
 
     # PROJECT 3
@@ -357,14 +364,14 @@ def home():
         text-align: center;
         font-weight: 400;
         margin-top: 60px;
-        background: #E5C5C1;
+        background: #4C3D19;
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         margin: 12px 20px;
         padding: 18px 24px;
         border-radius: 10px;
         items-align: center;
-        border: 2px solid rgba(127, 98, 105, 0.48);
+        border: 2px solid rgba(53, 64, 36, 0.48);
         box-shadow:
             0 10px 30px rgba(127, 98, 105, 0.18),
             0 0 20px rgba(229, 197, 193, 0.15),
@@ -399,7 +406,7 @@ def home():
         text-align: center;
         font-weight: 600;
         margin-top: 10px;
-        background: rgba(244, 225, 224, 0.38);
+        background: rgba(53, 64, 36);
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         padding: 18px 24px;
@@ -410,7 +417,7 @@ def home():
             inset 0 1px 0 rgba(255, 255, 255, 0.2),
             inset 0 -1px 0 rgba(127, 98, 105, 0.03);
         """):
-                ui.label("Title").style(TITLE_STYLE)
+                ui.label("Title").style(f"""{TITLE_STYLE}; color: #CFBB99;""")
                 ui.label("Description").style(f"""{NAV_STYLE}; text-align: center; width: 100%;""")
 
 # SKILLS CATEGORY
@@ -418,11 +425,11 @@ def home():
         ui.label("Skills").style(TITLE_STYLE)
         with ui.row().classes("gap-8; items-center;"):
             # CARD 1
-            with ui.card().style("background-color: rgba(127, 98, 105, 0.78); border-radius: 8px; width: 150px; "
-                                 "border: 3px solid rgba(127, 98, 105)").classes("items-center"):
-                ui.html('<i class="si si-python" style="font-size:60px; color:#F4E1E0;"></i>')
+            with ui.card().style("background-color: #4C3D19; border-radius: 8px; width: 150px; "
+                                 "border: 3px solid #E5D7C4").classes("items-center"):
+                ui.html('<i class="si si-python" style="font-size:60px; color:#E5D7C4;"></i>')
                 ui.label("Python").style("""
-                                   color:#F4E1E0;
+                                   color:#E5D7C4;
                                    font-family:'Cormorant', serif;
                                    font-size:30px;
                                    font-weight: 700;
@@ -430,28 +437,28 @@ def home():
                 ui.tooltip("Primary language; ~1 year building web apps and personal projects.").classes(
                     'text-lg rounded-xl '
                     'shadow-md').style("""
-                    background-color: #7F6269;
+                    background-color: #4C3D19;
                     font-family: 'Cormorant', serif;
                     font-style: bold;
                     """)
 
             # CARD 2
-            with ui.card().style("background-color: rgba(127, 98, 105, 0.78); border-radius: 8px; width: 150px; "
-                                 "border: 3px solid rgba(127, 98, 105)").classes("items-center"):
-                ui.html('<i class="si si-python" style="font-size:60px; color:#F4E1E0;"></i>')
+            with ui.card().style("background-color: #4C3D19; border-radius: 8px; width: 150px; "
+                                 "border: 3px solid #E5D7C4").classes("items-center"):
+                ui.html('<i class="si si-python" style="font-size:60px; color:#E5D7C4;"></i>')
                 ui.label("Python").style("""
-                                   color:#F4E1E0;
+                                   color:#E5D7C4;
                                    font-family:'Cormorant', serif;
                                    font-size:30px;
                                    font-weight: 700;
                                """)
 
             # CARD 3
-            with ui.card().style("background-color: rgba(127, 98, 105, 0.78); border-radius: 8px; width: 150px; "
-                                 "border: 3px solid rgba(127, 98, 105)").classes("items-center"):
-                ui.html('<i class="si si-python" style="font-size:60px; color:#F4E1E0;"></i>')
+            with ui.card().style("background-color: #4C3D19; border-radius: 8px; width: 150px; "
+                                 "border: 3px solid #E5D7C4").classes("items-center"):
+                ui.html('<i class="si si-python" style="font-size:60px; color:#E5D7C4;"></i>')
                 ui.label("Python").style("""
-                                   color:#F4E1E0;
+                                   color:#E5D7C4;
                                    font-family:'Cormorant', serif;
                                    font-size:30px;
                                    font-weight: 700;
@@ -462,9 +469,9 @@ def home():
         ui.label("Contact Me").style(TITLE_STYLE)
         with ui.column().style("""
             width: 100%;
-            background: #E5C5C1;
+            background: #E5D7C4;
 
-            border: 2px solid rgba(127, 98, 105, 0.48);
+            border: 2px solid #4C3D19;
             border-radius: 10px;
 
             padding: 15px 15px 15px 15px;
@@ -481,25 +488,30 @@ def home():
 
                     # GITHUB
                     with ui.row().classes("items-center gap-2"):
-                        ui.html('<i class="si si-github"></i>')
-                        ui.link("GitHub", "https://github.com/abbysenll", new_tab=True).style(NAV_STYLE)
+                        ui.html('<i class="si si-github" style="color: #4C3D19;"</i>')
+                        ui.link("GitHub", "https://github.com/abbysenll", new_tab=True).style(f"""{NAV_STYLE}; 
+                        color: #4C3D19""")
 
-                    ui.label("|").style(NAV_STYLE)
+                    ui.label("|").style(f"""{NAV_STYLE}; 
+                        color: #4C3D19""")
 
                     # LINKEDIN
                     with ui.row().classes("items-center gap-2"):
-                        ui.html('<i class="si si-linkedin"></i>')
+                        ui.html('<i class="si si-linkedin" style="color: #4C3D19;"</i>')
                         ui.link("LinkedIn",
                                 "https://www.linkedin.com/in/abigayle-snelson-8b4b55395/?skipRedirect=true",
                                 new_tab=True
-                                ).style(NAV_STYLE)
+                                ).style(f"""{NAV_STYLE}; 
+                        color: #4C3D19""")
 
-                    ui.label("|").style(NAV_STYLE)
+                    ui.label("|").style(f"""{NAV_STYLE}; 
+                        color: #4C3D19""")
 
                     # GMAIL
                     with ui.row().classes("items-center gap-2"):
-                        ui.html('<i class="si si-gmail"></i>')
-                        ui.label("snelsonabby@gmail.com").style(NAV_STYLE)
+                        ui.html('<i class="si si-gmail" style="color: #4C3D19;"</i>')
+                        ui.label("snelsonabby@gmail.com").style(f"""{NAV_STYLE}; 
+                        color: #4C3D19""")
 
 
 ui.run(
