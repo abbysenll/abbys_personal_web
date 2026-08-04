@@ -434,7 +434,7 @@ def home():
                                    font-size:30px;
                                    font-weight: 700;
                                """)
-                ui.tooltip("Primary language; ~1 year building web apps and personal projects.").classes(
+                ui.tooltip("Primary language; ~6 months building web apps and personal projects.").classes(
                     'text-lg rounded-xl '
                     'shadow-md').style("""
                     background-color: #4C3D19;
