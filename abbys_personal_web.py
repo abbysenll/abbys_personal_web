@@ -459,7 +459,7 @@ def home():
 
 # CONTACT ME CATEGORY
     with ui.column().props('id=contact').classes("gap-4"):
-        ui.label("Contact").style(TITLE_STYLE)
+        ui.label("Contact Me").style(TITLE_STYLE)
         with ui.column().style("""
             width: 100%;
             background: #E5C5C1;
@@ -467,35 +467,39 @@ def home():
             border: 2px solid rgba(127, 98, 105, 0.48);
             border-radius: 10px;
 
-            padding: 40px 40px;
+            padding: 15px 15px 15px 15px;
             margin-top: 20px;
             
-
             box-shadow:
                 0 -10px 30px rgba(127, 98, 105, 0.18),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
         """):
             with ui.row().classes("w-full gap-20 items-center"):
-                with ui.column().classes("gap-0"):
-                    ui.label("You can contact me here:").style(NAV_STYLE)
 
                 # LINK HOLDER
-                with ui.column().classes("gap-2"):
+                with ui.row().classes("items-center justify-center gap-6"):
 
                     # GITHUB
                     with ui.row().classes("items-center gap-2"):
                         ui.html('<i class="si si-github"></i>')
-                        ui.link("GitHub", "https://google.com").style(NAV_STYLE)
+                        ui.link("GitHub", "https://github.com/abbysenll", new_tab=True).style(NAV_STYLE)
 
-                    # GMAIL
-                    with ui.row().classes("items-center gap-2"):
-                        ui.html('<i class="si si-gmail"></i>')
-                        ui.link("Gmail", "mailto:snelsonabby@gmail.com").style(NAV_STYLE)
+                    ui.label("|").style(NAV_STYLE)
 
                     # LINKEDIN
                     with ui.row().classes("items-center gap-2"):
                         ui.html('<i class="si si-linkedin"></i>')
-                        ui.link("LinkedIn", "https://google.com").style(NAV_STYLE)
+                        ui.link("LinkedIn",
+                                "https://www.linkedin.com/in/abigayle-snelson-8b4b55395/?skipRedirect=true",
+                                new_tab=True
+                                ).style(NAV_STYLE)
+
+                    ui.label("|").style(NAV_STYLE)
+
+                    # GMAIL
+                    with ui.row().classes("items-center gap-2"):
+                        ui.html('<i class="si si-gmail"></i>')
+                        ui.label("snelsonabby@gmail.com").style(NAV_STYLE)
 
 
 ui.run(
