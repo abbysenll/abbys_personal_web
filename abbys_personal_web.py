@@ -143,7 +143,11 @@ def home():
         </style>
         ''')
 
+# HOME CATEGORY
     with ui.column().props('id=home').classes("items-center"):
+        ui.label("About Me").style(f"""{TITLE_STYLE}; font-size: 10px; margin-top: 20px; color: rgba(127, 98, 105, 
+        0);""")
+        # NAMECARD
         with ui.column().style("""
         color: #7F6269;
         font-family: "IM Fell Double Pica", serif;
@@ -167,6 +171,7 @@ def home():
             inset 0 1px 0 rgba(255, 255, 255, 0.2),
             inset 0 -1px 0 rgba(127, 98, 105, 0.03);
         """):
+            # INNER TEXT
             ui.label("Hello, my name is").style("""
             color: #7F6269;
             font-family: "IM Fell Double Pica", serif;
@@ -198,15 +203,239 @@ def home():
             inset 0 -1px 0 rgba(127, 98, 105, 0.03);
         """)
 
+# ABOUT ME CATEGORY
     with ui.column().props('id=about'):
         ui.label("About Me").style(TITLE_STYLE)
 
+# PROJECTS CATEGORY
     with ui.column().props('id=projects'):
         ui.label("Projects").style(TITLE_STYLE)
 
+    # PROJECT 1
+    with ui.row().classes("w-full"):
+        with ui.grid(columns=2).classes("w-full").style("""
+        color: #7F6269;
+        font-family: "IM Fell Double Pica", serif;
+        font-size: 50px;
+        width: min(1100px, 90vw);
+        max-width: 100%;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 60px;
+        background: #E5C5C1;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        margin: 12px 20px;
+        padding: 18px 24px;
+        border-radius: 10px;
+        items-align: center;
+        border: 2px solid rgba(127, 98, 105, 0.48);
+        box-shadow:
+            0 10px 30px rgba(127, 98, 105, 0.18),
+            0 0 20px rgba(229, 197, 193, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+        """):
+            ui.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxZnbZvsXk53T1xlTyr0akcZc7UqplTdw3LQVYKMRzO4SsF9_uRmwgpY&s=10').style("""
+                    font-family: "IM Fell Double Pica", serif;
+                    font-size: clamp(32px, 5vw, 40px);
+                    width: 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    background: rgba(244, 225, 224, 0.38);
+                    backdrop-filter: blur(4px);
+                    -webkit-backdrop-filter: blur(4px);
+                    padding: 18px 24px;
+                    border-radius: 10px;
+                    box-shadow:
+                        0 10px 30px rgba(127, 98, 105, 0.18),
+                        0 0 20px rgba(229, 197, 193, 0.15),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                        inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+                    """)
+            with ui.card().style("""
+        color: #7F6269;
+        font-family: "IM Fell Double Pica", serif;
+        font-size: clamp(32px, 5vw, 40px);
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 10px;
+        background: rgba(244, 225, 224, 0.38);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        padding: 18px 24px;
+        border-radius: 10px;
+        box-shadow:
+            0 10px 30px rgba(127, 98, 105, 0.18),
+            0 0 20px rgba(229, 197, 193, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+        """):
+                ui.label("Title").style(TITLE_STYLE)
+                ui.label("Description").style(f"""{NAV_STYLE}; text-align: center; width: 100%;""")
+
+    # PROJECT 2
+    with ui.row().classes("w-full"):
+        ui.space()
+        with ui.grid(columns=2).classes("w-full").style("""
+        color: #7F6269;
+        font-family: "IM Fell Double Pica", serif;
+        font-size: 50px;
+        width: min(1100px, 90vw);
+        max-width: 100%;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 60px;
+        background: #E5C5C1;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        margin: 12px 20px;
+        padding: 18px 24px;
+        border-radius: 10px;
+        items-align: center;
+        border: 2px solid rgba(127, 98, 105, 0.48);
+        box-shadow:
+            0 10px 30px rgba(127, 98, 105, 0.18),
+            0 0 20px rgba(229, 197, 193, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+        """):
+            ui.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxZnbZvsXk53T1xlTyr0akcZc7UqplTdw3LQVYKMRzO4SsF9_uRmwgpY&s=10').style("""
+                    font-family: "IM Fell Double Pica", serif;
+                    font-size: clamp(32px, 5vw, 40px);
+                    width: 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    background: rgba(244, 225, 224, 0.38);
+                    backdrop-filter: blur(4px);
+                    -webkit-backdrop-filter: blur(4px);
+                    padding: 18px 24px;
+                    border-radius: 10px;
+                    box-shadow:
+                        0 10px 30px rgba(127, 98, 105, 0.18),
+                        0 0 20px rgba(229, 197, 193, 0.15),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                        inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+                    """)
+            with ui.card().style("""
+        color: #7F6269;
+        font-family: "IM Fell Double Pica", serif;
+        font-size: clamp(32px, 5vw, 40px);
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 10px;
+        background: rgba(244, 225, 224, 0.38);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        padding: 18px 24px;
+        border-radius: 10px;
+        box-shadow:
+            0 10px 30px rgba(127, 98, 105, 0.18),
+            0 0 20px rgba(229, 197, 193, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+        """):
+                ui.label("Title").style(TITLE_STYLE)
+                ui.label("Description").style(f"""{NAV_STYLE}; text-align: center; width: 100%;""")
+
+    # PROJECT 3
+    with ui.row().classes("w-full"):
+        with ui.grid(columns=2).classes("w-full").style("""
+        color: #7F6269;
+        font-family: "IM Fell Double Pica", serif;
+        font-size: 50px;
+        width: min(1100px, 90vw);
+        max-width: 100%;
+        text-align: center;
+        font-weight: 400;
+        margin-top: 60px;
+        background: #E5C5C1;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        margin: 12px 20px;
+        padding: 18px 24px;
+        border-radius: 10px;
+        items-align: center;
+        border: 2px solid rgba(127, 98, 105, 0.48);
+        box-shadow:
+            0 10px 30px rgba(127, 98, 105, 0.18),
+            0 0 20px rgba(229, 197, 193, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+        """):
+            ui.image('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnxZnbZvsXk53T1xlTyr0akcZc7UqplTdw3LQVYKMRzO4SsF9_uRmwgpY&s=10').style("""
+                    font-family: "IM Fell Double Pica", serif;
+                    font-size: clamp(32px, 5vw, 40px);
+                    width: 100%;
+                    max-width: 100%;
+                    text-align: center;
+                    font-weight: 600;
+                    margin-top: 10px;
+                    background: rgba(244, 225, 224, 0.38);
+                    backdrop-filter: blur(4px);
+                    -webkit-backdrop-filter: blur(4px);
+                    padding: 18px 24px;
+                    border-radius: 10px;
+                    box-shadow:
+                        0 10px 30px rgba(127, 98, 105, 0.18),
+                        0 0 20px rgba(229, 197, 193, 0.15),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+                        inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+                    """)
+            with ui.card().style("""
+        color: #7F6269;
+        font-family: "IM Fell Double Pica", serif;
+        font-size: clamp(32px, 5vw, 40px);
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-weight: 600;
+        margin-top: 10px;
+        background: rgba(244, 225, 224, 0.38);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        padding: 18px 24px;
+        border-radius: 10px;
+        box-shadow:
+            0 10px 30px rgba(127, 98, 105, 0.18),
+            0 0 20px rgba(229, 197, 193, 0.15),
+            inset 0 1px 0 rgba(255, 255, 255, 0.2),
+            inset 0 -1px 0 rgba(127, 98, 105, 0.03);
+        """):
+                ui.label("Title").style(TITLE_STYLE)
+                ui.label("Description").style(f"""{NAV_STYLE}; text-align: center; width: 100%;""")
+
+# SKILLS CATEGORY
     with ui.column().props('id=skills'):
         ui.label("Skills").style(TITLE_STYLE)
         with ui.row().classes("gap-8; items-center;"):
+            # CARD 1
+            with ui.card().style("background-color: rgba(127, 98, 105, 0.78); border-radius: 8px; width: 150px; "
+                                 "border: 3px solid rgba(127, 98, 105)").classes("items-center"):
+                ui.html('<i class="si si-python" style="font-size:60px; color:#F4E1E0;"></i>')
+                ui.label("Python").style("""
+                                   color:#F4E1E0;
+                                   font-family:'Cormorant', serif;
+                                   font-size:30px;
+                                   font-weight: 700;
+                               """)
+                ui.tooltip("Primary language; ~1 year building web apps and personal projects.").classes(
+                    'text-lg rounded-xl '
+                    'shadow-md').style("""
+                    background-color: #7F6269;
+                    font-family: 'Cormorant', serif;
+                    font-style: bold;
+                    """)
+
+            # CARD 2
             with ui.card().style("background-color: rgba(127, 98, 105, 0.78); border-radius: 8px; width: 150px; "
                                  "border: 3px solid rgba(127, 98, 105)").classes("items-center"):
                 ui.html('<i class="si si-python" style="font-size:60px; color:#F4E1E0;"></i>')
@@ -217,6 +446,7 @@ def home():
                                    font-weight: 700;
                                """)
 
+            # CARD 3
             with ui.card().style("background-color: rgba(127, 98, 105, 0.78); border-radius: 8px; width: 150px; "
                                  "border: 3px solid rgba(127, 98, 105)").classes("items-center"):
                 ui.html('<i class="si si-python" style="font-size:60px; color:#F4E1E0;"></i>')
@@ -227,17 +457,8 @@ def home():
                                    font-weight: 700;
                                """)
 
-            with ui.card().style("background-color: rgba(127, 98, 105, 0.78); border-radius: 8px; width: 150px; "
-                                 "border: 3px solid rgba(127, 98, 105)").classes("items-center"):
-                ui.html('<i class="si si-python" style="font-size:60px; color:#F4E1E0;"></i>')
-                ui.label("Python").style("""
-                                   color:#F4E1E0;
-                                   font-family:'Cormorant', serif;
-                                   font-size:30px;
-                                   font-weight: 700;
-                               """)
-
-    with ui.column().props('id=contact').classes("gap-8"):
+# CONTACT ME CATEGORY
+    with ui.column().props('id=contact').classes("gap-4"):
         ui.label("Contact").style(TITLE_STYLE)
         with ui.column().style("""
             width: 100%;
@@ -246,27 +467,32 @@ def home():
             border: 2px solid rgba(127, 98, 105, 0.48);
             border-radius: 10px;
 
-            padding: 40px 60px;
-            margin-top: 40px;
+            padding: 40px 40px;
+            margin-top: 20px;
+            
 
             box-shadow:
                 0 -10px 30px rgba(127, 98, 105, 0.18),
                 inset 0 1px 0 rgba(255, 255, 255, 0.2);
         """):
-            with ui.row().classes("w-full gap-32 items-center"):
+            with ui.row().classes("w-full gap-20 items-center"):
                 with ui.column().classes("gap-0"):
-                    ui.label("Interested?").style(NAV_STYLE)
-                    ui.label("Contact me here:").style(NAV_STYLE)
+                    ui.label("You can contact me here:").style(NAV_STYLE)
 
+                # LINK HOLDER
                 with ui.column().classes("gap-2"):
+
+                    # GITHUB
                     with ui.row().classes("items-center gap-2"):
                         ui.html('<i class="si si-github"></i>')
                         ui.link("GitHub", "https://google.com").style(NAV_STYLE)
 
+                    # GMAIL
                     with ui.row().classes("items-center gap-2"):
                         ui.html('<i class="si si-gmail"></i>')
-                        ui.link("Gmail", "https://google.com").style(NAV_STYLE)
+                        ui.link("Gmail", "mailto:snelsonabby@gmail.com").style(NAV_STYLE)
 
+                    # LINKEDIN
                     with ui.row().classes("items-center gap-2"):
                         ui.html('<i class="si si-linkedin"></i>')
                         ui.link("LinkedIn", "https://google.com").style(NAV_STYLE)
